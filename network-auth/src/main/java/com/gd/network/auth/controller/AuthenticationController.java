@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gd.network.auth.mapper.TbUserMapper;
 import com.gd.network.auth.model.dto.LoginDto;
 import com.gd.network.auth.model.pojo.TUser;
-import com.gd.network.model.vo.Render;
+import com.gd.network.common.vo.Render;
 import com.gd.network.auth.utils.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

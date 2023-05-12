@@ -1,4 +1,4 @@
-package com.gd.network.model.vo;
+package com.gd.network.common.vo;
 
 import java.io.Serializable;
 
