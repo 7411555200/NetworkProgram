@@ -39,6 +39,11 @@ public class CommandServiceImpl implements CommandService {
     }
 
     @Override
+    public TCommand findCommandById(Integer id) {
+        return tbCommandMapper.selectById(id);
+    }
+
+    @Override
     public DataTablesResult findCommandListData(Integer start, Integer length, String search) {
         DataTablesResult result = new DataTablesResult();
         LambdaQueryWrapper<TCommand> lambdaQueryWrapper = Wrappers.lambdaQuery();

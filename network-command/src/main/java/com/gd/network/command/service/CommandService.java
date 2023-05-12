@@ -21,6 +21,13 @@ public interface CommandService {
     boolean create(CreateCommandDto createCommandDto);
 
     /**
+     * 根据ID查询命令
+     * @param id
+     * @return
+     */
+    TCommand findCommandById(Integer id);
+
+    /**
      * 分页条件查询命令
      * @param start
      * @param length

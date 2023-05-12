@@ -29,6 +29,12 @@ public class CommandController {
         return Render.ok(true);
     }
 
+    @GetMapping("get")
+    public Object findCommandById(@RequestParam("id") Integer id) {
+        TCommand tCommand = commandService.findCommandById(id);
+        return Render.ok(tCommand);
+    }
+
     @GetMapping("get/list")
     public Object findCommandListData(@RequestParam("start") Integer start,
                                                 @RequestParam("length") Integer length,
