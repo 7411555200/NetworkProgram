@@ -1,39 +1,35 @@
-You have successfully created a plugin using the Bamboo plugin archetype. What to do now:
+## 平台简介
+***
+NetworkProgram是一个管理网络服务器的平台。
+> 现阶段基于docker模拟网络服务器。
+## 项目地址
+***
+### 后端项目
+| 项目 | 简介                |
+| --- |-------------------|
+| [NetworkProgram](https://github.com/7411555200/NetworkProgram)    | 基于SpringBoot多模块架构 |
+### 前端项目
+| 项目                                                                               | 简介                |
+|----------------------------------------------------------------------------------|-------------------|
+| [NetworkProgramFront](https://github.com/7411555200/NetworkProgram-front) | 基于Vue3 + Vite4 + naive-ui-admin |
+## 内置功能
+***
+- 服务器管理
+- 命令管理
+- 定时任务
+- 权限管理
+- 角色管理
+- 日志中心
+## 技术栈
+***
+### 模块
+| 项目             | 说明             |
+|----------------|----------------|
+| `network-auth`   | 鉴权与登录的Module模块 |
+| `network-command` | 命令系统的Module模块  |
+| `network-server` | 服务器系统的Module模块 |
+| `network-role`   | 权限系统的Module模块  |
+| `network-log`    | 日志系统的Module模块  |
+| `network-task`   | 定时任务的Module模块  |
 
-1. CUSTOMISE THE PLUGIN
-
-- Generate project files for your IDE
-  - If you use Eclipse, run 'mvn eclipse:eclipse' to generate an Eclipse project file.
-  - If you use IDEA, run 'mvn idea:idea' to generate an IDEA project file.
-- Edit pom.xml. Add information about your project, its developers and your organisation. Check the version of
-  Bamboo in the dependencies section is correct.
-- Edit the plugin descriptor, src/main/resources/atlassian-plugin.xml. Add or modify plugin modules in your project.
-- Edit the plugin code in src/main/java/ or the unit tests in src/test/java/.
-
-More documentation on Atlassian plugins is available here:
-
-http://confluence.atlassian.com/display/DEVNET/How+to+Build+an+Atlassian+Plugin
-
-
-2. BUILD THE PLUGIN
-
-Building with your plugin with Maven is really easy:
-
-- Run 'mvn compile' to compile the plugin.
-- Run 'mvn test' to run the unit tests.
-- Run 'mvn package' to produce the JAR.
-- Run 'mvn bamboo:run' to run your plugin in the latest version of Bamboo
-
-Please remove this file before releasing your plugin.
-
-
-** NOTE ON RESOURCE FILTERING **
-
-The default pom has 'resource filtering' enabled, which means files in the src/main/resources directory will have
-variables in the form ${var} replaced during the build process. For example, the default atlassian-plugin.xml includes
-${project.artifactId}, which is replaced with the artifactId taken from the POM when building the plugin.
-
-More information on resource filtering is available in the Maven documentation:
-
-http://maven.apache.org/plugins/maven-resources-plugin/examples/filter.html
-
+### 框架
