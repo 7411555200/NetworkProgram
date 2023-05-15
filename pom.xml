@@ -13,6 +13,7 @@
         <module>network-command</module>
         <module>network-common</module>
         <module>network-server</module>
+        <module>network-role</module>
     </modules>
 
     <packaging>pom</packaging>
