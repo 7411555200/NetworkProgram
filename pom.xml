@@ -12,6 +12,7 @@
         <module>network-auth</module>
         <module>network-command</module>
         <module>network-common</module>
+        <module>network-server</module>
     </modules>
 
     <packaging>pom</packaging>
